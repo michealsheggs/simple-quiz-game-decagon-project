@@ -39,32 +39,33 @@
              <div class="col-md-2"></div>
              <div class="col-md-8">
               <form class="form" id="signupform">
+                <p id="display_alert"></p>
                   <div class="col">
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text"></div>
                       </div>
-                      <input type="text" class="form-control" id="" placeholder="first name">
+                      <input type="text" class="form-control" id="firstname" name="first_name" placeholder="first name">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text"></div>
                       </div>
-                      <input type="text" class="form-control" id="" placeholder="last name">
+                      <input type="text" class="form-control" id="lastname" name="last_name" placeholder="last name">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
-                      <input type="email" class="form-control" id="" placeholder="enter your email">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="enter your email">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text"></div>
                         </div>
-                        <input type="password" class="form-control" id="" placeholder="enter your password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="enter your password">
                       </div>
-                    <button type="submit" class="btn btn-primary mb-2">Register</button>
+                    <button id="sign-up-btn" type="submit" class="btn btn-primary mb-2">Register</button>
                     </div>
                   </div>     
               </form>
@@ -81,5 +82,9 @@
 
 <!-- all the js scripts -->
     <script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
+    <script src="../js/forms/sign-up.js"></script>
+    <script src="../js/forms/login.js"></script>
+    <script src="../js/forms/logout.js"></script>
+
 </body>
 </html>

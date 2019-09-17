@@ -17,7 +17,11 @@
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
+                <ul class="nav-item">Sheggs Quiz Game</ul>
               <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="#">About</a>
                     </li>
@@ -25,11 +29,12 @@
                       <a class="nav-link" href="#">contact</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Login</a>
+                      <a class="nav-link" href="forms/signup.html">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sign Up</a>
+                      <a class="nav-link" href="forms/login.html">Login</a>
                     </li>
+                    
                   </ul>
 
          </nav> 
@@ -38,7 +43,86 @@
                 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
                 <div class="row">
                   <div class="col-1">sidebar</div>
-                  <div class="col-10">the quiz will be here</div>
+                  <!-- the quiz section -->
+                  <div class="col-10">
+                    <div class="row main-question-page">
+                        <h1 class="top-heading">This is a quiz game, please take some time to answer some of our questions</h1>
+                        <div class="col-md-6 ">
+                            <p class="question">question one</p>
+                            <!-- the questions section -->
+                            <div class="question-section">
+                              <h4>How do you create a function in JavaScript?</h4>
+                             <!-- options -->
+                              <div class="option">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                      <label class="form-check-label" for="exampleRadios1">
+                                        function myfunc()
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                        func(){}
+                                      </label>
+                                    </div>
+                                   
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          public function func
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                          private func ()
+                                        </label>
+                                      </div>
+                                      
+                              </div>
+                            </div>
+                            <!-- the question section ends here -->
+                        </div>
+                        <div class="col-md-6">
+                          <!-- the question section  -->
+                          <p class="question">question two</p>
+                          <div class="question-section">
+                              <h4> How does a FOR loop start?</h4>
+                             <!-- options -->
+                              <div class="option">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                      <label class="form-check-label" for="exampleRadios1">
+                                        for i ==0, i,i++
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                        for(let i=0;i++)
+                                      </label>
+                                    </div>
+                                   
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          for(const i=0;i>array;i++)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                          (let i=0;i>array;i++)
+                                        </label>
+                                      </div>
+                                      
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- the quiz section ends here -->
                   <div class="col-1">sidebar</div>
                 </div>
               </div>

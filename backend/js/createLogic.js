@@ -3,7 +3,9 @@ $('#createbtn').on('click',function(e){
     const option_one = $('#option_one').val();
     const option_two = $('#option_two').val();
     const option_three = $('#option_three').val();    
-    const option_four = $('#option_four').val();  
+    const option_four = $('#option_four').val(); 
+    const getElement =$("#view_question");
+ 
     e.preventDefault();
     //option declaration
     
@@ -37,12 +39,45 @@ $('#createbtn').on('click',function(e){
             },
           });
         //check radio box
-        $.ajax("#option_D").click(function(){
-            let radioValue = $("#option_D:checked").val();
-            if(radioValue){
-                alert("Your are a - " + radioValue);
-            }
+        $.ajax("#options").click(function(){
+            let radioValue = $("input:radio").val();
+            alert('working')
+            // if(radioValue){
+            //     alert("Your are a - " + radioValue);
+            // }
         });
+    //get all the  data from database
+    $.ajax({
+        method: "GET",
+        url: 'http://localhost:3000/questions',
+        data: {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        //     added_question,
+        //     option_one,
+        //     option_two,
+        //     option_three,
+        //     option_four,
+
+        },
+        success: function(resopnse){
+            $.each(questions, function(i, questions){
+                // questions.append(
+                //     alert('work')
+                console.log(questions);
+                
+                // )
+            })
+            // alert('worked');
+        }
+        // error: alert('not working');
+
+    });
+
+    $.getJSON("db.json", function(data){
+        
+        $.each(data.questions, function(key,value){
+
+        })
+    })
 
       }
 });

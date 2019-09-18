@@ -26,3 +26,9 @@ body{
 #submit:hover{
     background-color: #38a;
 }
+.main-question-page{
+  margin-top:120px;
+}
+.question{
+  margin-top:40px;
+}

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/sheet.css">
     <link rel="stylesheet" href="css/sign-up.css">
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
     <title> simple quiz game</title>
 </head>
 <body>
@@ -51,16 +50,14 @@
                             <p class="question">question one</p>
                             <!-- the questions section -->
                             <div class="question-section">
-                              <h4>How do you create a function in JavaScript?</h4>
+                              <!-- <h4 class="quest"></h4> -->
                              <!-- options -->
                               <div class="option">
-                                  <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                      <label class="form-check-label" for="exampleRadios1">
-                                        function myfunc()
-                                      </label>
+                                  <div class="form-check getthis">
+                                      <!-- <input class="form-check-input" type="radio" name="option" id="optiontype" value=""> -->
+            
                                     </div>
-                                    <div class="form-check">
+                                    <!-- <div class="form-check">
                                       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                       <label class="form-check-label" for="exampleRadios2">
                                         func(){}
@@ -78,48 +75,17 @@
                                         <label class="form-check-label" for="exampleRadios2">
                                           private func ()
                                         </label>
-                                      </div>
+                                      </div> -->
                                       
                               </div>
                             </div>
                             <!-- the question section ends here -->
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" >
                           <!-- the question section  -->
-                          <p class="question">question two</p>
-                          <div class="question-section">
-                              <h4> How does a FOR loop start?</h4>
-                             <!-- options -->
-                              <div class="option">
-                                  <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                      <label class="form-check-label" for="exampleRadios1">
-                                        for i ==0, i,i++
-                                      </label>
-                                    </div>
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                      <label class="form-check-label" for="exampleRadios2">
-                                        for(let i=0;i++)
-                                      </label>
-                                    </div>
-                                   
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                          for(const i=0;i>array;i++)
-                                        </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                          (let i=0;i>array;i++)
-                                        </label>
-                                      </div>
-                                      
-                              </div>
-                            </div>
-                        </div>
+                          <div id=Thequestionsection>
+                          
+                      </div>
                     </div>
                   </div>
                   <!-- the quiz section ends here -->
@@ -128,5 +94,11 @@
               </div>
     </div>
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
+
+
+    <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
+    <script src="backend/js/createLogic.js"></script>
+    <script src="backend/js/view_quest.js"></script>
+
 </body>
 </html>

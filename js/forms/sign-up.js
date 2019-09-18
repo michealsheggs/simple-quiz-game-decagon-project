@@ -24,7 +24,7 @@ $('#sign-up-btn').on("click",function(e) {
           $.ajax({
             method: 'POST',
             url: 'http://localhost:3000/users',
-            data: {
+            data: {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                 first_name,
                 last_name,
                 email,

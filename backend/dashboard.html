@@ -38,31 +38,15 @@
                   </ul>
 
          </nav> 
-  
-        <h4>Please select your gender.</h4>
-        <p> 
-            <label><input type="radio" name="gender" value="male">Male</label> 
-            <label><input type="radio" name="gender" value="female">Female</label>
-        </p>
-        <p><input id="btnrad" type="button" value="Get Value"></p>
-        
+
+         <!-- <button id="viw_quiz">view quiz</button> -->
+         <div class="quiz"></div>
     </div>
-    <script>
-            $(document).ready(function(){
-               $("#btnrad").on('click', function(){
-                   const radioValue = $("#rad:checked").val();
-                   if(radioValue){
-                    //    alert("Your are a - " + radioValue);
-                    alert('itb work');
-                   }
-               });
-               
-           });
-       </script>
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
     <!-- the script section -->
     <script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
-
+    <script src="js/createLogic.js"></script>
+    <script src="js/view_quest.js"></script>
 </body>
 </html>

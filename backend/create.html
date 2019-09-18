@@ -20,7 +20,7 @@
                 <ul class="nav-link active">Dashboard</ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
+                      <a class="nav-link active" href="#dashboard.html">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="create.html">Create</a>
@@ -41,8 +41,10 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-4">
+                     <form action="" method="post">
+                         <p id="display_alert"></p>
                      <div class="form-group">
-                            <label for="question">create question</label>
+                            <label for="createquestion">create question</label>
                             <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
                             placeholder="enter your question"></textarea>
                      </div>
@@ -92,8 +94,26 @@
                      </div>
                      
                     <button id="createbtn" class="btn btn-primary form-control" type="button" name="createButton">create question</button>
-               </div>
-                 <div class="col-md-9"></div>
+                 </form>
+                </div>
+               <!-- the table section -->
+                 <div class="col-md-8">
+                     <div class="form-group">
+                            <h3 class="text-center">question table</h3>
+                            <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <th></th><th>questions</th>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>no 1</td>
+                                    <td>ghsahdhjhadhhd</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        
+                     </div>         
+                 </div>
              </div>
 
          </div>
@@ -103,6 +123,6 @@
 
     <!-- the script section -->
     <script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
-
+    <script src="js/createLogic.js"></script>
 </body>
 </html>

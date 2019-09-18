@@ -27,9 +27,7 @@
         $.each(data, function(key, value){
             const populate = 
             `
-            // <h4> ${value.added_question}</h4><br/> 
             <p class="question">question two</p>
-            <div class="question-section">
             <h4> ${value.added_question}</h4><br/> 
 
     
@@ -57,7 +55,7 @@
           </div>
             `
             ;
-            $(".getthis").append(populate);
+            $("#Thequestionsection").append(populate);
         });
        
     }

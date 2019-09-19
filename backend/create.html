@@ -40,8 +40,8 @@
          </nav> 
          <div class="container">
              <div class="row">
-                 <div class="col-md-4">
-                     <form action="" method="post">
+                 <div class="col-md-4 container">
+                     <form id="c" action="">
                          <p id="display_alert"></p>
                      <div class="form-group">
                             <label for="createquestion">create question</label>
@@ -75,60 +75,44 @@
 
                      <!-- the section for the answers -->
                      <h4>give the answer to the questions</h4>
-
                      <div class="form-group form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="options" id="option_A" value="option1">
-                            <label class="form-check-label" for="option_A">A</label>
+                            <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
                      </div>
                      <div class="form-check form-check-inline">
-                           <input class="form-check-input" type="radio" name="options" id="option_B" value="option2">
-                            <label class="form-check-label" for="option_B">B</label>
+                           <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
                     </div>
                      <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="options" id="option_C" value="option3">
-                            <label class="form-check-label" for="option_C">C</label>
+                            <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
                      </div>
                      <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="options" id="option_D" value="option4">
-                            <label class="form-check-label" for="option_D">D</label>
+                            <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
                      </div>
                      
-                    <button id="createbtn" class="btn btn-primary form-control" type="button" name="createButton">create question</button>
+                    <button id="createbtn" class="btn btn-primary form-control" name="createButton">create question</button>
                  </form>
                 </div>
                <!-- the table section -->
                  <div class="col-md-8">
-                     <div class="form-group">
-
-                      
-                        <button id="viw_quiz">view quiz</button>
-                        <div class="quiz"></div>
-                            <!-- <h3 class="text-center">question table</h3>
-                            <table class="table table-bordered table-striped table-condensed">
-                                <thead>
-                                  <th></th><th>questions</th>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>no 1</td>
-                                    <td id="view_question"></td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                         -->
-                     </div>         
+                     <!-- <div class="form-group">
+                            <h1>check radio</h1>
+                          <form action="">
+                            <label for=""></label>
+                          </form> -->
+                                
                  </div>
              </div>
 
          </div>
         
     </div>
+    
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
     <!-- the script section -->
     <script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
     <script src="js/createLogic.js"></script>
     <script src="js/view_quest.js"></script>
+
 
 </body>
 </html>

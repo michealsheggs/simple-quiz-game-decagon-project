@@ -1,33 +1,8 @@
-   
-                // $.getJSON('http://localhost:3000/questions').done(function(data) { 
-                //     $.each(data.items, function(i, item){
-                //         let tile = item.added_question;
-                //         let one = item.question_one;
-                //         let two = item.question_two;
-                //         let three = item.question_three;
-                //         $('#dipp').html('<p> Name: ' + tile + '</p>'); 
-                //         $('#dipp').append('<td>Age : ' + one + '</td>'); 
-                //         $('#dipp').append('<p> Role: ' + two+ '</p>'); 
-                //         $('#dipp').append('<p> Company: ' + three + '</p>'); 
-                //         console.log(questions.added_question);
-                //     }
-                    
-                
-                // })
- $.ajax({
-        method: "GET",
-        url: 'http://localhost:3000/questions',
-
-
-    });
-
-// $("#viw_quiz").click(function(event){
-    // event.stopPropagation;
     $.getJSON('http://localhost:3000/questions', function(data){
         $.each(data, function(key, value){
             const populate = 
             `
-            <p class="question">question two</p>
+            <p class="question">question ${value.id}</p>
             <h4> ${value.added_question}</h4><br/> 
 
     
@@ -59,7 +34,4 @@
         });
        
     }
-    )
-// })
-                
-            // console.log(questions.added_question);;
+    );

@@ -8,20 +8,20 @@
     
                 <div class="option">
                     <div class='form-check'>
-                    <input class='form-check-input' type="radio" name="option" id="optiontype" value="A">${value.option_one}
+                    <input class='form-check-input' type="radio" name="optiontype${value.id}" id="optiontype" value="A">${value.option_one}
 
                       </div>
                       <div class="form-check">
-                      <input class="form-check-input" type="radio" name="option" id="optiontype" value="B">${value.option_two}
+                      <input class="form-check-input" type="radio" name="optiontype${value.id}" id="optiontype" value="B">${value.option_two}
                     
                       </div>
                      
                       <div class="form-check">
-                      <input class="form-check-input" type="radio" name="option" id="optiontype" value="C">${value.option_three}
+                      <input class="form-check-input" type="radio" name="optiontype${value.id}" id="optiontype" value="C">${value.option_three}
                           
                         </div>
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="option" id="optiontype" value="D">${value.option_four}
+                        <input class="form-check-input" type="radio" name="optiontype${value.id}" id="optiontype" value="D">${value.option_four}
                           
                         </div>
                         
@@ -35,3 +35,5 @@
        
     }
     );
+    
+

@@ -1,14 +1,15 @@
+let answer = "";
 $('#createbtn').on('click',function(e){
-    const added_question = $('#createquestion').val();
-    const option_one = $('#option_one').val();
-    const option_two = $('#option_two').val();
-    const option_three = $('#option_three').val();    
-    const option_four = $('#option_four').val(); 
+    let added_question = $('#createquestion').val();
+    let option_one = $('#option_one').val();
+    let option_two = $('#option_two').val();
+    let option_three = $('#option_three').val();    
+    let option_four = $('#option_four').val(); 
 
     e.preventDefault();
   
 //check if the radio box
-    let answer = "";
+    
     let answerChecked = document.getElementsByName('options'); 
     for(i = 0; i < answerChecked.length; i++) { 
       if(answerChecked[i].checked){ 
@@ -22,7 +23,7 @@ $('#createbtn').on('click',function(e){
       }else{
         $.ajax({
             method: 'POST',
-            url: 'http://localhost:3000/questions',
+            url: `http://localhost:3000/questions`,
             data: {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                 added_question,
                 option_one,

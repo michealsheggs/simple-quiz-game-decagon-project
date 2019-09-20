@@ -37,3 +37,30 @@
     );
     
 
+
+    
+    $.getJSON('http://localhost:3000/questions', function(quizQuestions){
+      $.each(quizQuestions, function(key, value){
+          const populateData = 
+          `
+          <table class="table table-condensed table stripe table-bordered">
+          <thead>
+          
+          <th>no</th><th>question</th>
+            
+          </thead>
+          <tbody>
+          <tr> 
+              <td class="">${value.id}</td> 
+            
+              <td class="">${value.added_question}</td>         
+          
+          </tr>                        
+          </tbody>
+      </table>
+          `
+          ;
+          $(".questionContent").append(populateData);
+      });
+  
+  });

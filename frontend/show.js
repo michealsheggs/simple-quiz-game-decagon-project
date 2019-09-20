@@ -5,7 +5,7 @@
             `
             <table class="table table-border table-striped">
             <thead>
-                <th>${value.id}</th><th>the correct answers</th><th>the wrong scores</th>
+                <th>${value.id}</th><th>the correct answer</th>
             </thead>
             <tbody>
             <tr> 
@@ -21,3 +21,4 @@
     }
     );
   
+

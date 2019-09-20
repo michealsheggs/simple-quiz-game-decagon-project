@@ -47,15 +47,16 @@
           <thead>
           
           <th>no</th><th>question</th>
-            
+          
           </thead>
           <tbody>
           <tr> 
-              <td class="">${value.id}</td> 
-            
-              <td class="">${value.added_question}</td>         
-          
-          </tr>                        
+             <td class="text-primary">${value.id}</td> 
+
+              <td class="">${value.added_question}</td><td class="btn btn-primary">edit</td><td class="btn btn-danger">delete</td>         
+      
+
+          </tr>                       
           </tbody>
       </table>
           `

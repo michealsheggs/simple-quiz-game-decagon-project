@@ -10,13 +10,17 @@
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
     <title> simple quiz game</title>
 </head>
-<body>
+<body style="">
 
     <div class="">
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
-                <ul class="nav-item">Sheggs Quiz Game</ul>
+                <ul class="nav" >
+                  <li class="nav-item" style="color: #f1f1f1">
+                    <a  class="nav-link active" href="index.html">Sheggs Quiz App</a>
+                  </li>
+                </ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
                       <a class="nav-link active" href="index.html">Home</a>
@@ -28,10 +32,16 @@
                       <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="frontend/showscores.html">shoscore</a>
+                      </li>
+                    <li class="nav-item signupbtn">
                       <a class="nav-link" href="forms/signup.html">Sign Up</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item loginbtn">
                       <a class="nav-link" href="forms/login.html">Login</a>
+                    </li>
+                    <li class="nav-item logoutBtn">
+                      <a class="nav-link logoutBtn" href="">logout</a>
                     </li>
                     
                   </ul>
@@ -41,23 +51,33 @@
               
                 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
                 <div class="row">
-                  <div class="col-md-2">sidebar</div>
+                  <div class="col-md-1"></div>
                   <!-- the quiz section -->
-                  <div class="col-md-8">
-                        <h1 class="top-heading">This is a quiz game, please take some time to answer some of our questions</h1>    
+                  <div class="col-md-7">
+                        <h2 class="top-heading">This is a quiz game, please take some time to answer some of our
+                           questions</h2>    
                           <!-- the question section  -->
+                          <p>General questions:  the following quiz questiion contains option A - D , chose an answer option an click submit to see your scores</p>
                          <form action="">
                            
                             <div id=Thequestionsection></div>
                           <div>
-                            <form action="">
-                                <button id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
-                            </form>
+                                <button style="margin-top:20px;" id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
+                          
                           </div>
                          </form>
-                  </div>
+                  </div>               
                   <!-- the quiz section ends here -->
-                  <div class="col-md-2">sidebar</div>
+
+
+                  <div class="col-md-3">
+                                      <!-- display the results -->
+
+                      <div class="tableContent"></div>
+                      <h4 id="totalScore" class="text-danger"></h4>
+                  </div>
+                  <!-- the right sidebar -->
+                  <div class="col-md-1"></div>
                 </div>
               </div>
     </div>
@@ -68,6 +88,10 @@
     <script src="backend/js/createLogic.js"></script>
     <script src="backend/js/view_quest.js"></script>
     <script src="backend/js/scoring.js"></script>
+    <script src="js/forms/logout.js"></script>
+
+    <!-- <script src="frontend/show.js"></script> -->
+
 
 </body>
 </html>

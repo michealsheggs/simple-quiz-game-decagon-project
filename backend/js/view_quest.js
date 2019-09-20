@@ -2,7 +2,7 @@
         $.each(data, function(key, value){
             const populate = 
             `
-            <p class="question">question ${value.id}</p>
+            <p class="question text-primary">question ${value.id}</p>
             <h4> ${value.added_question}</h4><br/> 
 
     

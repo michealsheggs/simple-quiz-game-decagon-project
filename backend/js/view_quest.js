@@ -46,7 +46,8 @@
           <table class="table table-condensed table stripe table-bordered">
           <thead>
           
-          <th>no</th><th>question</th>
+          <th>no</th>
+          <th>question</th>
           
           </thead>
           <tbody>
